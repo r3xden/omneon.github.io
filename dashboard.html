@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omneon Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-black via-slate-950 to-black text-slate-200">
+
+<!-- NAVBAR (Centered Title + Visit Box + 3 Dot Menu) -->
+<nav class="w-full fixed top-0 left-0 z-50 bg-black/70 backdrop-blur border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
+    <div></div>
+    <h1 class="text-xl font-bold tracking-wide text-cyan-400 text-center">OMNEON</h1>
+    <div class="flex justify-end items-center gap-4">
+      <a href="https://chatgpt.com/g/g-692bed94b9548191acda011a3f69ebb6-omneon" target="_blank"
+        class="px-4 py-1.5 border border-cyan-400 text-cyan-400 rounded-xl text-sm hover:bg-cyan-400 hover:text-black transition">
+        Visit Omneon
+      </a>
+      <button id="menuBtn" class="text-white text-2xl focus:outline-none">&#8942;</button>
+    </div>
+  </div>
+</nav>
+
+<!-- SLIDE MENU -->
+<div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-black border-l border-slate-800 transform translate-x-full transition-transform duration-300 z-50">
+  <div class="p-6 flex flex-col gap-6 text-sm">
+    <button id="closeMenu" class="self-end text-xl text-slate-400">&times;</button>
+    <a href="index.html" class="hover:text-cyan-400">Home</a>
+    <a href="about.html" class="hover:text-cyan-400">About</a>
+    <a href="tos.html" class="hover:text-cyan-400">Terms</a>
+    <a href="privacy.html" class="hover:text-cyan-400">Privacy</a>
+    <a href="updates.html" class="hover:text-cyan-400">Updates</a>
+    <a href="announcements.html" class="hover:text-cyan-400">Announcements</a>
+    <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+    <a href="login.html" class="hover:text-cyan-400">Logout</a>
+  </div>
+</div>
+
+<!-- DASHBOARD CONTENT -->
+<section class="pt-40 pb-32 px-6 max-w-7xl mx-auto space-y-10">
+  <h2 class="text-4xl font-bold text-cyan-400">Omneon Control Dashboard</h2>
+
+  <!-- USER PROFILE CARD -->
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-black/60 border border-slate-800 rounded-3xl p-6">
+      <h3 class="text-xl font-semibold text-cyan-400 mb-4">User Profile</h3>
+      <p><span class="text-slate-400">Email:</span> <span id="userEmail">Guest</span></p>
+      <p class="mt-2"><span class="text-slate-400">Access Mode:</span> Demo Session</p>
+      <p class="mt-2"><span class="text-slate-400">Status:</span> <span class="text-green-400">Active</span></p>
+    </div>
+
+    <!-- SYSTEM STATUS -->
+    <div class="bg-black/60 border border-slate-800 rounded-3xl p-6">
+      <h3 class="text-xl font-semibold text-cyan-400 mb-4">System Status</h3>
+      <p>Model: <span class="text-cyan-400">GPT‑5.1</span></p>
+      <p class="mt-2">Core: <span class="text-cyan-400">Omniversal Intellex</span></p>
+      <p class="mt-2">Layer: <span class="text-cyan-400">Meta-Knowledge Simulation</span></p>
+      <p class="mt-2">Operational State: <span class="text-green-400">ONLINE</span></p>
+    </div>
+
+    <!-- VERSION STATUS -->
+    <div class="bg-black/60 border border-slate-800 rounded-3xl p-6">
+      <h3 class="text-xl font-semibold text-cyan-400 mb-4">Version Control</h3>
+      <p>Current Version: <span class="text-cyan-400">v1.0</span></p>
+      <p class="mt-2">Build Type: Stable</p>
+      <p class="mt-2">Last Sync: <span class="text-slate-400">Live</span></p>
+    </div>
+  </div>
+
+  <!-- FEATURE TILES -->
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="bg-black/60 border border-slate-800 rounded-3xl p-6">
+      <h4 class="text-lg text-cyan-400 font-semibold mb-2">Archive Mode</h4>
+      <p class="text-slate-400">Lore extraction & canonical parsing engine.</p>
+    </div>
+
+    <div class="bg-black/60 border border-slate-800 rounded-3xl p-6">
+      <h4 class="text-lg text-cyan-400 font-semibold mb-2">Axiom Mode</h4>
+      <p class="text-slate-400">Pure logic, strict scaling & metaphysical rules.</p>
+    </div>
+
+    <div class="bg-black/60 border border-slate-800 rounded-3xl p-6">
+      <h4 class="text-lg text-cyan-400 font-semibold mb-2">Nexus Mode</h4>
+      <p class="text-slate-400">Cross‑cosmology analysis & versus simulations.</p>
+    </div>
+  </div>
+
+  <!-- NOTICE -->
+  <div class="bg-black/40 border border-slate-800 rounded-3xl p-6 text-slate-400">
+    This dashboard is a **visual mockup** for Omneon's future control systems. All features shown here are conceptual and part of Omneon's planned omniversal interface.
+  </div>
+
+</section>
+
+<footer class="bg-black border-t border-slate-800 py-10 px-6 text-center text-sm text-slate-400">
+  © 2025 Omneon — Dashboard Interface
+</footer>
+
+<!-- MENU SCRIPT -->
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
+
+  // Show logged in user (demo)
+  const user = localStorage.getItem("omneonUser");
+  if (user) {
+    document.getElementById("userEmail").textContent = user;
+  }
+</script>
+
+</body>
+</html>
