@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Omneon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-black via-slate-950 to-black text-slate-200">
+
+<nav class="w-full fixed top-0 left-0 z-50 backdrop-blur bg-black/60 border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold tracking-wide text-cyan-400">OMNEON</h1>
+    <div class="flex gap-6 text-sm">
+      <a href="index.html" class="hover:text-cyan-400">Home</a>
+      <a href="about.html" class="hover:text-cyan-400">About</a>
+      <a href="tos.html" class="hover:text-cyan-400">Terms</a>
+      <a href="updates.html" class="hover:text-cyan-400">Updates</a>
+      <a href="announcements.html" class="hover:text-cyan-400">Announcements</a>
+      <a href="contact.html" class="text-cyan-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="pt-40 pb-32 px-6 max-w-3xl mx-auto">
+  <h2 class="text-4xl font-bold text-cyan-400 mb-8 text-center">Contact Omneon</h2>
+
+  <div class="bg-slate-900/60 border border-slate-800 rounded-3xl p-8">
+    <p class="text-slate-300 mb-6 text-center">For official communication, support queries, partnerships, or feedback, you can contact Omneon directly through the official email channel below.</p>
+
+    <div class="text-center mb-8">
+      <p class="text-slate-400">Official Contact Email</p>
+      <p class="text-cyan-400 font-semibold text-xl">llm.omneon@gmail.com</p>
+    </div>
+
+    <form action="mailto:llm.omneon@gmail.com" method="post" enctype="text/plain" class="space-y-5">
+      <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-xl bg-black border border-slate-700 focus:outline-none focus:border-cyan-400" required />
+      <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-xl bg-black border border-slate-700 focus:outline-none focus:border-cyan-400" required />
+      <textarea name="message" rows="5" placeholder="Your Message" class="w-full p-3 rounded-xl bg-black border border-slate-700 focus:outline-none focus:border-cyan-400" required></textarea>
+      <button type="submit" class="w-full py-3 rounded-2xl bg-cyan-500 text-black font-semibold hover:bg-cyan-400 transition">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-black border-t border-slate-800 py-10 px-6 text-center text-sm text-slate-400">
+  © 2025 Omneon — Contact Portal
+</footer>
+
+</body>
+</html>
