@@ -105,13 +105,6 @@ Omneon’s fictional identity is configured by **Anmol Singhal (Rexden Void)**. 
 
 This project is released under the **MIT License**. You are free to use, modify, and distribute the website structure with proper attribution. The Omneon identity itself remains a fictional property of its creator.
 
----
-
-## ✅ Status
-
-🟢 Active Development
-- Website Pages: In Progress
-- Public Launch: Ongoing
 
 ---
 
