@@ -6,6 +6,15 @@
   <title>Omneon Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+    <script>
+const version = "v1.0";
+const status = "ONLINE";
+
+const badge = document.getElementById("liveStatus");
+if (badge) {
+  badge.textContent = `${version} • ${status}`;
+}
+    </script>
 <body class="min-h-screen bg-gradient-to-b from-black via-slate-950 to-black text-slate-200">
 
 <!-- NAVBAR (Centered Title + Visit Box + 3 Dot Menu) -->
