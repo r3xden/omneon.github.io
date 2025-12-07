@@ -11,14 +11,33 @@
 
   <!-- NAVBAR -->
   <nav class="w-full fixed top-0 left-0 z-50 bg-black/70 backdrop-blur border-b border-slate-800">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <!-- Logo -->
-    <h1 class="text-xl font-bold tracking-wide text-cyan-400">OMNEON</h1>
+  <div class="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
 
-    <!-- 3 Dot / Hamburger Button -->
-    <button id="menuBtn" class="text-white text-2xl focus:outline-none">
-      &#8942;
-    </button>
+    <!-- EMPTY LEFT (for perfect center balance) -->
+    <div></div>
+
+    <!-- CENTER LOGO -->
+    <h1 class="text-xl font-bold tracking-wide text-cyan-400 text-center">
+      OMNEON
+    </h1>
+
+    <!-- RIGHT CONTROLS -->
+    <div class="flex justify-end items-center gap-4">
+      <!-- Visit Omneon Box Button -->
+      <a
+        href="https://chatgpt.com/g/g-692bed94b9548191acda011a3f69ebb6-omneon"
+        target="_blank"
+        class="px-4 py-1.5 border border-cyan-400 text-cyan-400 rounded-xl text-sm hover:bg-cyan-400 hover:text-black transition"
+      >
+        Visit Omneon
+      </a>
+
+      <!-- 3 Dot Menu Button -->
+      <button id="menuBtn" class="text-white text-2xl focus:outline-none">
+        &#8942;
+      </button>
+    </div>
+
   </div>
 </nav>
 
@@ -50,6 +69,7 @@
     mobileMenu.classList.add("translate-x-full");
   });
 </script>
+
 
   <!-- HERO -->
   <section class="pt-36 pb-32 px-6 text-center">
