@@ -6,6 +6,15 @@
   <title>Contact Omneon</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+    <script>
+const version = "v1.0";
+const status = "ONLINE";
+
+const badge = document.getElementById("liveStatus");
+if (badge) {
+  badge.textContent = `${version} • ${status}`;
+}
+    </script>
 <body class="min-h-screen bg-gradient-to-b from-black via-slate-950 to-black text-slate-200">
 
 <nav class="w-full fixed top-0 left-0 z-50 bg-black/70 backdrop-blur border-b border-slate-800">
