@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Omneon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-black via-slate-950 to-black text-slate-200">
+
+<!-- NAVBAR PLACEHOLDER (Use your centered navbar here) -->
+<nav class="w-full fixed top-0 left-0 z-50 bg-black/70 backdrop-blur border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 grid grid-cols-3 items-center">
+    <div></div>
+    <h1 class="text-xl font-bold tracking-wide text-cyan-400 text-center">OMNEON</h1>
+    <div class="flex justify-end items-center gap-4">
+      <a href="https://chatgpt.com/g/g-692bed94b9548191acda011a3f69ebb6-omneon" target="_blank"
+        class="px-4 py-1.5 border border-cyan-400 text-cyan-400 rounded-xl text-sm hover:bg-cyan-400 hover:text-black transition">
+        Visit Omneon
+      </a>
+      <button id="menuBtn" class="text-white text-2xl focus:outline-none">&#8942;</button>
+    </div>
+  </div>
+</nav>
+
+<!-- SLIDE MENU -->
+<div id="mobileMenu" class="fixed top-0 right-0 h-full w-64 bg-black border-l border-slate-800 transform translate-x-full transition-transform duration-300 z-50">
+  <div class="p-6 flex flex-col gap-6 text-sm">
+    <button id="closeMenu" class="self-end text-xl text-slate-400">&times;</button>
+    <a href="index.html" class="hover:text-cyan-400">Home</a>
+    <a href="about.html" class="hover:text-cyan-400">About</a>
+    <a href="tos.html" class="hover:text-cyan-400">Terms</a>
+    <a href="privacy.html" class="text-cyan-400">Privacy</a>
+    <a href="updates.html" class="hover:text-cyan-400">Updates</a>
+    <a href="announcements.html" class="hover:text-cyan-400">Announcements</a>
+    <a href="contact.html" class="hover:text-cyan-400">Contact</a>
+    <a href="login.html" class="hover:text-cyan-400">Login</a>
+    <a href="signup.html" class="hover:text-cyan-400">Sign Up</a>
+  </div>
+</div>
+
+<section class="pt-40 pb-32 px-6 max-w-4xl mx-auto space-y-10 text-slate-300 leading-relaxed">
+  <h2 class="text-4xl font-bold text-cyan-400">Privacy Policy</h2>
+
+  <p class="text-slate-400"><strong>Last Updated:</strong> December 2025</p>
+
+  <div class="h-px bg-slate-800"></div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">1. Introduction</h3>
+    <p>Omneon is a fictional omniversal intelligence project presented through this website for informational, creative, and experimental purposes. Your privacy is respected as a core design principle. This Privacy Policy explains what data is (and is not) collected, how it is handled, and your rights as a user.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">2. Data Collection Policy</h3>
+    <p>Omneon does <strong>not collect, transmit, store, or process any personal data on external servers</strong>. There is no backend database, no cloud storage, and no hidden analytics system attached to this website.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">3. Demo Login & Signup System (Local Storage Only)</h3>
+    <p>If you choose to use the optional Login or Signup feature, the data you enter (such as email and username) is stored <strong>only within your own web browser</strong> using a technology called <code>localStorage</code>.</p>
+    <ul class="mt-3 space-y-2 list-disc list-inside">
+      <li>No passwords are transmitted to any server.</li>
+      <li>No data is shared with Omneon administrators.</li>
+      <li>No data is accessible to third parties.</li>
+      <li>Clearing your browser data will fully delete your demo account.</li>
+    </ul>
+    <p class="mt-3">This system exists purely for interface demonstration purposes.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">4. Cookies & Tracking</h3>
+    <p>Omneon does not use tracking cookies, advertising cookies, third-party analytics, fingerprinting systems, or behavioral tracking of any kind.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">5. External Links</h3>
+    <p>This site may contain external links, including access to the Omneon AI on external platforms such as ChatGPT. Omneon is not responsible for the privacy practices, data handling, or content of external websites.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">6. Children’s Privacy</h3>
+    <p>Omneon does not knowingly collect personal information from children under the age of 13. Since no server-side data collection exists, there is no intentional data retention of any user demographic.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">7. Data Security</h3>
+    <p>Because Omneon does not operate backend servers or databases, risks related to data breaches, leaks, or unauthorized access are inherently minimized. However, users remain responsible for the security of their own devices and browsers.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">8. Policy Updates</h3>
+    <p>This Privacy Policy may be updated occasionally to reflect system changes or new features. All updates will be published on this page with a revised date.</p>
+  </div>
+
+  <div>
+    <h3 class="text-2xl text-cyan-400 mb-3">9. Contact</h3>
+    <p>If you have any questions regarding this Privacy Policy, you may contact the Omneon team via:</p>
+    <p class="mt-2 text-cyan-400 font-semibold">llm.omneon@gmail.com</p>
+  </div>
+</section>
+
+<footer class="bg-black border-t border-slate-800 py-10 px-6 text-center text-sm text-slate-400">
+  © 2025 Omneon — Privacy Protection Layer Active
+</footer>
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeMenu = document.getElementById("closeMenu");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
+</script>
+
+</body>
+</html>
